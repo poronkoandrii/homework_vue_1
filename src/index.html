@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Title</title>
+  </head>
+  <body>
+    <div :style="styles" class="mainer" id="app">
+      <h1>Введите цвет:</h1>
+      <input type="text" v-model="backgroundColor" />
+      <button @click="changeColor">Активировать</button>
+      <p>{{ color }}</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
